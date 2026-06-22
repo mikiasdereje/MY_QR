@@ -35,7 +35,7 @@ For hosting, we recommend **GitHub Pages**, **Netlify**, or **Vercel**.
 
 **Mikias Dereje**
 - **Phone**: +251 911 770 263
-- **Telegram**: [@my_qr_menuet](https://t.me/my_qr_menuet)
+- **Telegram**: [@my_qr_menu](https://t.me/my_qr_menu)
 - **Location**: Addis Ababa, Ethiopia
 
 ---
