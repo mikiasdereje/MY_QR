@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-green: #22c55e;
+    --brand-green-glow: rgba(34, 197, 94, 0.3);
+    --brand-obsidian: #050505;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--brand-obsidian);
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header & Nav */
+header.scrolled {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(30px);
+    height: 70px !important;
+}
+
+.nav-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: #444;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--brand-green);
+}
+
+/* Background Animation Tuning */
+#animation-container {
+    mask-image: radial-gradient(circle, black 30%, transparent 90%);
+    -webkit-mask-image: radial-gradient(circle, black 30%, transparent 90%);
+}
+
+#animation-canvas {
+    opacity: 0.55;
+    filter: saturate(1.2) brightness(0.9);
+}
+
+/* Clean Cards & Sections */
+.glass {
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-delayed {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active, .reveal-delayed.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Buttons */
+button {
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+button:hover {
+    box-shadow: 0 10px 40px var(--brand-green-glow);
+}
+
+/* Inputs */
+input, textarea {
+    transition: border-color 0.4s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--brand-green) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-green);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    #animation-canvas {
+        opacity: 0.3;
+    }
+    h1 {
+        font-size: 3.5rem !important;
+    }
+}

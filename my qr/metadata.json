@@ -1,0 +1,6 @@
+{
+  "name": "Duxica Crypto Landing Page",
+  "description": "A high-fidelity minimalist futuristic hero section layout for Duxica crypto trading center featuring a clean black theme, custom typography, and live-interactive crypto simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
